@@ -1063,15 +1063,15 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template App Galera Cluster:galera.cluster_size.last(0)}&lt;2</expression>
+            <expression>{Template App Galera Cluster:galera.cluster_size.last(0)}&lt;3</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Galera Cluster members problems</name>
+            <name>Galera Cluster member missing - other node(s) down </name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
             <status>0</status>
-            <priority>2</priority>
+            <priority>4</priority>
             <description>Check if mysql and garbd are up and running ok</description>
             <type>0</type>
             <manual_close>1</manual_close>
